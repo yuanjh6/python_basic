@@ -1,11 +1,16 @@
 # python小白05数据可视化
-百度搜索：  
-python特征工程，绘图  
-python特征工程 数据可视化  
+百度搜索：
+
+python特征工程，绘图
+
+python特征工程 数据可视化
+
 ## 简介
-特征工程之前用excel做的，简单的还行，稍稍复杂就非常慢了。考虑换用python，相关资料整理了下，备查  
+特征工程之前用excel做的，简单的还行，稍稍复杂就非常慢了。考虑换用python，相关资料整理了下，备查
+
 ## 01，pycharm绘图不显示问题
-pandas中Series、DataFrame的plot()方法不显示图片  
+pandas中Series、DataFrame的plot()方法不显示图片
+
 ```
 Series([4,5,7]).plot() 
 plt.show()  #需要加这个
@@ -26,7 +31,8 @@ line1.set_linestyle("--")
 line2.set_color('k')
 line2.set_linestyle('-')
 ```
-![](_v_images/20191127091622227_31962.png)  
+![](_v_images/20191127091622227_31962.png)
+
 
 ```
 #通过pyplot.setp（）进行批量设置；
@@ -34,12 +40,15 @@ line1,line2=plt.plot(x,-x\*2,x,np.sin(x\*\*2*np.pi))
 plt.setp(line1,color='r',linewidth=2)#采用关键字参数
 plt.setp(line2,"color",'k','linewidth',2,'linestyle','-.')#采用变量形式，这时候属性必须用字符串形式成对表示（数值除外）
 ```
-![](_v_images/20191127091622015_18129.png)  
+![](_v_images/20191127091622015_18129.png)
+
 
 
 ## 03，子图
-创建子图：plt.subplot(nrows,ncols,char_num)  
-当选定了子图后，那么这个子图就是当前选定子图，后续所有操作都是在这个子图上，可以通过gca()获取当前的axe。  
+创建子图：plt.subplot(nrows,ncols,char_num)
+
+当选定了子图后，那么这个子图就是当前选定子图，后续所有操作都是在这个子图上，可以通过gca()获取当前的axe。
+
 ```
 ax=plt.subplot(221)#创建2*2个子图，并选定第一个（一般选定的顺序是从左到右，从上到下）
 #print type(ax),打印显示器为AxesSubplot对象
@@ -59,11 +68,14 @@ ax3.plot(x,func(x),label="new value")
 ax3.legend(loc='best')
 ```
 
-![](_v_images/20191127091621804_8603.png)  
+![](_v_images/20191127091621804_8603.png)
 
 
-标题：Python绘图  
-地址：[http://www.cnblogs.com/chaoren399/p/5792168.html](http://www.cnblogs.com/chaoren399/p/5792168.html)  
+
+标题：Python绘图
+
+地址：[http://www.cnblogs.com/chaoren399/p/5792168.html](http://www.cnblogs.com/chaoren399/p/5792168.html)
+
 ## 04，添加标题和标签 plt.title, plt.xlabe, plt.ylabel 离散点, 线
 ```
 #!/etc/bin/python
@@ -83,7 +95,8 @@ plt.ylabel('value')
 plt.title('A simple Plot')
 plt.show()
 ```
-![](_v_images/20191127091621593_3506.png)  
+![](_v_images/20191127091621593_3506.png)
+
 
 ## 05，直方图
 ```
@@ -103,9 +116,11 @@ plt.title('Histogram')
 plt.show()
 ```
 
-![](_v_images/20191127091621278_31507.png)  
+![](_v_images/20191127091621278_31507.png)
 
-  
+
+
+
 
 ## 06，其他
 ```
@@ -115,7 +130,8 @@ plt.figure(1) # 创建图表1
 线条样式 Changing the line style虚线:plot(x,y, '--')
 蓝色星型markers：plot(x,y, ’b*’)  
 ```
-![image](_v_images/20191127091620658_25207.png)![image](_v_images/20191127091620446_7256.png)![image](_v_images/20191127091620234_30478.png)  
+![image](_v_images/20191127091620658_25207.png)![image](_v_images/20191127091620446_7256.png)![image](_v_images/20191127091620234_30478.png)
+
 
 子图控制
 ```
@@ -124,9 +140,12 @@ pl.subplot(221)
 pl.subplot(222)  
 pl.subplot(212)  
 ```
-![image](_v_images/20191127091620021_10186.png)  
+![image](_v_images/20191127091620021_10186.png)
+
 
 ## 友情链接
-Python--matplotlib绘图可视化知识点整理：[http://blog.csdn.net/panda1234lee/article/details/52311593](http://blog.csdn.net/panda1234lee/article/details/52311593)  
-python画图：[http://www.cnblogs.com/similarface/p/6252496.html](http://www.cnblogs.com/similarface/p/6252496.html)  
+Python--matplotlib绘图可视化知识点整理：[http://blog.csdn.net/panda1234lee/article/details/52311593](http://blog.csdn.net/panda1234lee/article/details/52311593)
+
+python画图：[http://www.cnblogs.com/similarface/p/6252496.html](http://www.cnblogs.com/similarface/p/6252496.html)
+
 基于 Python 的数据可视化：[http://mt.sohu.com/20170102/n477572079.shtml](http://mt.sohu.com/20170102/n477572079.shtml)  

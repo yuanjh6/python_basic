@@ -1,5 +1,6 @@
 # python小白02简明python教程笔记
-原始文档见：http://sebug.net/paper/python/  
+原始文档见：http://sebug.net/paper/python/
+
 
 ## PART1-3USELESS
 
