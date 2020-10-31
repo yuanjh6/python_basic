@@ -3,8 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to python_basic's documentation!
+python小白入门
 ========================================
+python小白入门教程，自己初学python时的笔记整理，以及python基础语法和开发过程中可能遇到的一些坑
 
 .. toctree::
    :maxdepth: 2

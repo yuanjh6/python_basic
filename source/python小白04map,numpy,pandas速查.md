@@ -1,7 +1,6 @@
 # python小白04map,numpy,pandas速查
 ## Map操作
 
-
 ```
 dict["w"] = "watermelon"  
 dict.get("c", "apple")    
