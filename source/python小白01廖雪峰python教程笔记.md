@@ -44,7 +44,7 @@ list(filter(not_empty, ['A', '', 'B', None, 'C', '  ']))
 
 sorted([36, 5, -12, 9, -21], key=abs)
 
-sorted(['bob', 'about', 'Zoo', 'Credit'], key=str.lower, reve rse=True)
+sorted(['bob', 'about', 'Zoo', 'Credit'], key=str.lower, reverse=True)
 
 
 函数作为返回值
